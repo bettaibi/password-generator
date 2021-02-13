@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container flex flex-center">
+        <div class="content">
+            <h3>Password Generator</h3>
+            <div class="tooltip" id="tooltip"></div>
+
+            <div class="screen flex flex-row space-between">
+                <div id="result" style="margin-right: 1rem;"></div>
+                <button id="clipboard">Copy</button>
+            </div>
+            <div class="settings">
+                <div class="setting flex flex-row space-between">
+                    <label for="length">Password length</label>
+                    <input type="number" id="length" value="10" min="8" max="50" required/>
+                </div>
+                <div class="setting flex flex-row space-between">
+                    <label for="upper">Include uppercase letters</label>
+                    <input type="checkbox" id="upper" checked>
+                </div>
+                <div class="setting flex flex-row space-between">
+                    <label for="lower">Include lowercase letters</label>
+                    <input type="checkbox" id="lower" checked>
+                </div>
+                <div class="setting flex flex-row space-between">
+                    <label for="number">Include numbers</label>
+                    <input type="checkbox" id="number" checked>
+                </div>
+                <div class="setting flex flex-row space-between">
+                    <label for="symbol">Include symbols</label>
+                    <input type="checkbox" id="symbol" checked>
+                </div>
+                <button id="generate">Generate Password</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
